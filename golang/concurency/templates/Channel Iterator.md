@@ -22,22 +22,22 @@ for num := range ch {
 
 В целом, шаблон "Channel iterator" предоставляет эффективную и удобную модель для работы с данными из каналов в Golang, обеспечивая гибкость и возможность параллельной обработки данных.
 
-[Пример 1](/notes/golang/concurency/templates/ci/ex1)
+[Пример 1](https://github.com/patyukin/notes/tree/master/golang/concurency/templates/ci/ex1)
 
-[Пример 2](/notes/golang/concurency/templates/ci/ex1)
+[Пример 2](https://github.com/patyukin/notes/tree/master/golang/concurency/templates/ci/ex2)
 
-[Пример 3](/notes/golang/concurency/templates/ci/ex1)
+[Пример 3](https://github.com/patyukin/notes/tree/master/golang/concurency/templates/ci/ex3)
 
-[Пример 4](/notes/golang/concurency/templates/ci/ex1)
+[Пример 4](https://github.com/patyukin/notes/tree/master/golang/concurency/templates/ci/ex4)
 
-[Пример 5](/notes/golang/concurency/templates/ci/ex1)
+[Пример 5](https://github.com/patyukin/notes/tree/master/golang/concurency/templates/ci/ex5)
 
-[Пример 6](/notes/golang/concurency/templates/ci/ex1)
+[Пример 6](https://github.com/patyukin/notes/tree/master/golang/concurency/templates/ci/ex6)
 
 ================================================================
 
-[Задача 1](/notes/golang/concurency/templates/ci/t1)
+[Задача 1](https://github.com/patyukin/notes/tree/master/golang/concurency/templates/ci/t1)
 
-[Задача 1](/notes/golang/concurency/templates/ci/t2)
+[Задача 1](https://github.com/patyukin/notes/tree/master/golang/concurency/templates/ci/t2)
 
-[Задача 1](/notes/golang/concurency/templates/ci/t3)
+[Задача 1](https://github.com/patyukin/notes/tree/master/golang/concurency/templates/ci/t3)

@@ -38,6 +38,6 @@ for num := range ch {
 
 [Задача 1](https://github.com/patyukin/notes/tree/master/golang/concurency/templates/ci/t1)
 
-[Задача 1](https://github.com/patyukin/notes/tree/master/golang/concurency/templates/ci/t2)
+[Задача 2](https://github.com/patyukin/notes/tree/master/golang/concurency/templates/ci/t2)
 
-[Задача 1](https://github.com/patyukin/notes/tree/master/golang/concurency/templates/ci/t3)
+[Задача 3](https://github.com/patyukin/notes/tree/master/golang/concurency/templates/ci/t3)

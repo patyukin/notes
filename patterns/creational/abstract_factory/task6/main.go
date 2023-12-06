@@ -12,7 +12,7 @@ type Vegetable interface {
 	GetColor() string
 }
 
-var _ Fruit = (*Apple)(nil)
+var _ FoodFactory = (*HealthyFoodFactory)(nil)
 
 // FoodFactory Абстрактная фабрика
 type FoodFactory interface {

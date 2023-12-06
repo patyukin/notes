@@ -85,8 +85,7 @@ func (f *ChinaFactory) CreateAddressInput() AddressInput {
 }
 
 func main() {
-	var factory MarketAbstractFactory
-
+	var factory RussiaFactory
 	button := factory.CreateButton()
 	quantityInput := factory.CreateQuantityInput()
 	addressInput := factory.CreateAddressInput()
@@ -94,4 +93,13 @@ func main() {
 	fmt.Println(button.Render())
 	fmt.Println(quantityInput.Render())
 	fmt.Println(addressInput.Render())
+
+	var chinaFactory ChinaFactory
+	chinaButton := chinaFactory.CreateButton()
+	chinaQuantityInput := chinaFactory.CreateQuantityInput()
+	chinaAddressInput := chinaFactory.CreateAddressInput()
+
+	fmt.Println(chinaButton.Render())
+	fmt.Println(chinaQuantityInput.Render())
+	fmt.Println(chinaAddressInput.Render())
 }

@@ -2,6 +2,8 @@ package main
 
 import "fmt"
 
+var _ TransportFactory = (*LogisticsFactory)(nil)
+
 // TransportFactory Абстрактный интерфейс фабрики транспорта
 type TransportFactory interface {
 	CreateGroundTransport() GroundTransport

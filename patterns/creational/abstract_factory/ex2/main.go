@@ -2,6 +2,9 @@ package main
 
 import "fmt"
 
+var _ AbstractVehicleFactory = (*FordFactory)(nil)
+var _ AbstractVehicleFactory = (*ChevroletFactory)(nil)
+
 // AbstractVehicleFactory интерфейс абстрактной фабрики
 type AbstractVehicleFactory interface {
 	CreateCar() Car
@@ -21,50 +24,50 @@ type Motorcycle interface {
 // FordFactory конкретная фабрика для создания автомобилей и мотоциклов от Ford
 type FordFactory struct{}
 
-func (f FordFactory) CreateCar() Car {
-	return FordCar{}
+func (f *FordFactory) CreateCar() Car {
+	return &FordCar{}
 }
 
-func (f FordFactory) CreateMotorcycle() Motorcycle {
-	return FordMotorcycle{}
+func (f *FordFactory) CreateMotorcycle() Motorcycle {
+	return &FordMotorcycle{}
 }
 
 // ChevroletFactory конкретная фабрика для создания автомобилей и мотоциклов от Chevrolet
 type ChevroletFactory struct{}
 
-func (f ChevroletFactory) CreateCar() Car {
-	return ChevroletCar{}
+func (f *ChevroletFactory) CreateCar() Car {
+	return &ChevroletCar{}
 }
 
-func (f ChevroletFactory) CreateMotorcycle() Motorcycle {
-	return ChevroletMotorcycle{}
+func (f *ChevroletFactory) CreateMotorcycle() Motorcycle {
+	return &ChevroletMotorcycle{}
 }
 
 // FordCar конкретная реализация автомобиля от Ford
 type FordCar struct{}
 
-func (c FordCar) Drive() string {
+func (c *FordCar) Drive() string {
 	return "Driving a Ford car."
 }
 
 // FordMotorcycle конкретная реализация мотоцикла от Ford
 type FordMotorcycle struct{}
 
-func (m FordMotorcycle) Ride() string {
+func (m *FordMotorcycle) Ride() string {
 	return "Riding a Ford motorcycle."
 }
 
 // ChevroletCar конкретная реализация автомобиля от Chevrolet
 type ChevroletCar struct{}
 
-func (c ChevroletCar) Drive() string {
+func (c *ChevroletCar) Drive() string {
 	return "Driving a Chevrolet car."
 }
 
 // ChevroletMotorcycle конкретная реализация мотоцикла от Chevrolet
 type ChevroletMotorcycle struct{}
 
-func (m ChevroletMotorcycle) Ride() string {
+func (m *ChevroletMotorcycle) Ride() string {
 	return "Riding a Chevrolet motorcycle."
 }
 

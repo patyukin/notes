@@ -2,6 +2,8 @@ package main
 
 import "fmt"
 
+var _ ProductFactory = (*ElectronicsFactory)(nil)
+
 // ProductFactory Абстрактный интерфейс фабрики продуктов
 type ProductFactory interface {
 	CreateProduct() Product

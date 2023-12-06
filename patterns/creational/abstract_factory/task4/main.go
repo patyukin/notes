@@ -85,14 +85,7 @@ func (f *ChinaFactory) CreateAddressInput() AddressInput {
 }
 
 func main() {
-	market := "Russia"
-
 	var factory MarketAbstractFactory
-	if market == "Russia" {
-		factory = &RussiaFactory{}
-	} else if market == "China" {
-		factory = &ChinaFactory{}
-	}
 
 	button := factory.CreateButton()
 	quantityInput := factory.CreateQuantityInput()

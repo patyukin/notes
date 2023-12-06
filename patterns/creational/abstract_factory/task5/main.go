@@ -34,6 +34,8 @@ func (d *DellNotebook) Price() string {
 	return "Dell price"
 }
 
+var _ AbstractFactory = (*HPFactory)(nil)
+
 type AbstractFactory interface {
 	CreateNotebook() Notebook
 }
